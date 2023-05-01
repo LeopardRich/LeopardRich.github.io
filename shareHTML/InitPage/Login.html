@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./Login.css">
+
+    <script src="./Login.js"></script>  <!-- 注意，js文件中要保证先加载完页面 -->
+</head>
+
+<body>
+
+    <!-- 导航栏部分 -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Help</a>
+        </nav>
+        <form action="" class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button><i class='bx bx-search'></i></button>
+        </form>
+    </header>
+
+    <!-- 背景部分 -->
+    <div class="background"></div>
+
+    <!-- 主要界面 -->
+    <div class="container">
+        <div class="item">   <!-- 界面的左半部分 -->
+            <h2 class="logo">LeopardRich Blog</h2>  <!-- 表单标题 -->
+
+            <div class="text-item">
+                <h2>Welcome! <br><span>
+                        To LeopardRich Blog
+                    </span></h2>
+                <p>浮华三千，吾爱有三： <br/>日、月与卿。<br/>日为朝，月为暮，卿为朝朝暮暮。</p>
+                <!-- <div class="social-icon">  社交图标
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- 右半部分 -->
+        <div class="login-section">  
+            
+            <!-- 登录界面 -->
+            <div class="form-box login" id="loginBox">
+                <form action="">
+                    <h2>Sign In</h2>
+                    <!-- 邮箱 -->
+                    <div class="input-box">
+                        <input type="email" required>
+                        <label >Email</label>
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                    </div>
+
+                    <!-- 密码 -->
+                    <div class="input-box">
+                        <input type="password" required>
+                        <label>Password</label>
+                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                    </div>
+
+                    <!-- 记住密码 & 忘记密码 -->
+                    <div class="remember-password">
+                        <label for=""><input type="checkbox">Remember Me</label>
+                        <ahref="#">Forget Password</a>
+                    </div>
+
+                    <!-- 登录 -->
+                    <button class="btn">Login In</button>
+                    
+                    <!-- 进入注册界面 -->
+                    <div class="create-account">
+                        <p>Create A New Account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- 注册界面 -->
+            <div class="form-box register" id="registerBox">
+                <form action="">
+                    <h2>Sign Up</h2>
+                    <!-- 用户名 -->
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-user'></i></span>
+                        <input type="text" required>
+                        <label >Username</label>
+                    </div>
+                    <!-- 邮箱 -->
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" required>
+                        <label >Email</label>
+                    </div>
+                    <!-- 密码 -->
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <!-- 记住密码 -->
+                    <div class="remember-password">
+                        <label for=""><input type="checkbox">I agree with this statment</label>
+                    </div>
+                    <button class="btn">Login In</button>
+                    <div class="create-account">
+                        <p>Already Have An Account? <a href="#" class="login-link">Sign In</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
