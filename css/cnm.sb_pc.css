@@ -514,6 +514,9 @@ li{
 	line-height: 50px;
 	padding-top: 25px;
 	font-family: sans-serif;
+}
+
+#nav03 p{
 	border-bottom: 1px dashed rgba(40,40,40,0.08);
 }
 
